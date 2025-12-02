@@ -12,205 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        background-color: #358181;
-        margin: 0;
-        padding: 0;
-      }
-
-      .profile-container {
-        text-align: center;
-        /* margin: 20px auto; */
-        padding: 30px;
-        width: 100%;
-        /* max-width: 800px; */
-        background-color: #ffff;
-        background-image: url("assets/screenshot-2.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        animation: fadeInLeft 3s ease forwards;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .profile-container .overlay {
-        position: relative;
-        background-color: rgba(236, 231, 231, 0.85);
-        padding: 30px;
-        border-radius: 20px;
-        animation: fadeIn 5s ease forwards;
-      }
-
-      .profile-container img {
-        width: 200px;
-        border-radius: 50%;
-        border: 4px solid #ddd;
-        margin-bottom: 20px;
-        transition: transform 0.4s ease;
-      }
-
-      .profile-container img:hover {
-        transform: scale(1.05);
-      }
-
-      .profile-container h1 {
-        margin-bottom: 10px;
-        font-size: 26px;
-        animation: slideUp 0.8s ease forwards;
-      }
-
-      .profile-container p {
-        font-size: 16px;
-        color: #555;
-        animation: slideUp 0.8s ease forwards;
-        animation-delay: 0.2s;
-      }
-
-      .social-links {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        flex-wrap: wrap;
-      }
-
-      .social-links a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        background-color: #e9e9e9;
-        color: #333;
-        transition: background-color 0.3s, transform 0.3s;
-      }
-
-      .social-links a:hover {
-        background-color: #358181;
-        color: white;
-        transform: translateY(-5px);
-      }
-
-      .about-section {
-        padding: 20px;
-        background-color: #ffffff;
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-        text-align: center;
-      }
-
-      .about-section h2 {
-        font-size: 28px;
-        margin-bottom: 16px;
-        color: #358181;
-        font-weight: 600;
-      }
-
-      .about-section p {
-        font-size: 16px;
-        line-height: 1.7;
-        color: #358181;
-        margin: 0 auto;
-      }
-
-      .skills-section {
-        /* margin: 50px auto; */
-        padding: 30px;
-      }
-
-      .skills-section h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
-        text-align: center;
-        animation: fadeInDown 1s ease-out;
-      }
-
-      .skill-item {
-        display: flex;
-        align-items: center;
-        background: #ffeedd;
-        border-radius: 12px;
-        padding: 15px 20px;
-        margin-bottom: 15px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-        transform: translateY(20px);
-        opacity: 0;
-        animation: slideUp 0.6s forwards;
-        transition: transform 0.3s ease, background-color 0.3s ease;
-      }
-
-      .skill-item:hover {
-        transform: scale(1.02);
-        background-color: #eaeaea;
-      }
-
-      .skill-item img {
-        width: 40px;
-        height: 40px;
-        object-fit: contain;
-        margin-right: 15px;
-      }
-
-      .skill-item:nth-child(2) {
-        animation-delay: 0.2s;
-      }
-      .skill-item:nth-child(3) {
-        animation-delay: 0.4s;
-      }
-      .skill-item:nth-child(4) {
-        animation-delay: 0.6s;
-      }
-      .skill-item:nth-child(5) {
-        animation-delay: 0.8s;
-      }
-      .skill-item:nth-child(6) {
-        animation-delay: 1s;
-      }
-
-      @keyframes fadeInLeft {
-        0% {
-          opacity: 0;
-          transform: translateX(-50px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          transform: translateY(-20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes slideUp {
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body style="background-color: #ffeedd">
     <div>
@@ -289,65 +91,109 @@
       </div>
     </div>
     <div class="about-section" style="background-color: #ffeedd">
-      <h2>TENTANG SAYA</h2>
+      <h2>ABOUT ME</h2>
       <p>
-        Mahasiswa Manajemen Informatika dengan minat tinggi pada ketelitian,
-        sistem yang terstruktur, serta pengelolaan data. Berpengalaman dalam
-        pengembangan aplikasi web dasar, manajemen proyek kecil, dan analisis
-        kebutuhan sistem.
+        I am an Informatics Management student with a strong passion for
+        technology and problem-solving. With experience in administrative work
+        and hands-on involvement in web development projects, I combine
+        accuracy, structured thinking, and solid technical skills to create
+        efficient and well-organized digital solutions. I am adaptable,
+        detail-oriented, and committed to delivering quality work while
+        continuously expanding my expertise in system design, databases, and
+        business process digitalization.
       </p>
     </div>
-    <div class="skills-section" style="background-color: #358181">
-      <h2 style="text-align: center; font-weight: bold; color: #ffeedd">
-        KEMAMPUAN
-      </h2>
 
-      <div class="skill-item">
-        <img src="assets/html-css.png" alt="HTML CSS" />
-        <div>
-          <strong>HTML & CSS</strong><br />
-          Dasar pengembangan frontend untuk tampilan web
+    <div
+      class="skills-section"
+      style="background-color: #358181; padding: 20px"
+    >
+      <div
+        style="
+          display: flex;
+          gap: 40px;
+          justify-content: center;
+          flex-wrap: wrap;
+        "
+      >
+        <div style="flex: 1; min-width: 300px">
+          <h3 style="color: #ffeedd; font-weight: bold; margin-bottom: 15px">
+            Hard Skills
+          </h3>
+
+          <div class="skill-item">
+            <img src="assets/html-css.png" alt="HTML CSS" />
+            <div>
+              <strong>HTML & CSS</strong><br />
+              Basic frontend development for web interfaces
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <img src="assets/laravel.png" alt="Laravel" />
+            <div>
+              <strong>Laravel</strong><br />
+              Modern PHP framework for building efficient web applications
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <img src="assets/mysql.png" alt="MySQL" />
+            <div>
+              <strong>MySQL</strong><br />
+              Management and manipulation of relational databases
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <img src="assets/database.png" alt="Database" />
+            <div>
+              <strong>Database Design</strong><br />
+              Creating optimal database structures and relationships
+            </div>
+          </div>
+
+          <div class="skill-item justify-content-start">
+            <strong class="me-3">and others</strong>
+            <div class="d-flex flex-wrap gap-2">
+              <img src="assets/php.png" alt="PHP" />
+              <img src="assets/canva.png" alt="Canva" />
+              <img src="assets/word.png" alt="Microsoft Word" />
+              <img src="assets/excel.png" alt="Microsoft Excel" />
+              <img src="assets/powerpoint.png" alt="Microsoft Powerpoint" />
+              <img src="assets/vsc.png" alt="Visual Studio Code" />
+              <img src="assets/github.png" alt="GitHub" />
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="skill-item">
-        <img src="assets/php.png" alt="PHP" />
-        <div>
-          <strong>PHP</strong><br />
-          Pengembangan sisi backend dan logika sistem
-        </div>
-      </div>
+        <!-- SOFT SKILLS -->
+        <div style="flex: 1; min-width: 300px">
+          <h3 style="color: #ffeedd; font-weight: bold; margin-bottom: 15px">
+            Soft Skills
+          </h3>
 
-      <div class="skill-item">
-        <img src="assets/laravel.png" alt="Laravel" />
-        <div>
-          <strong>Laravel</strong><br />
-          Framework PHP modern untuk membangun aplikasi web yang efisien
-        </div>
-      </div>
-
-      <div class="skill-item">
-        <img src="assets/mysql.png" alt="MySQL" />
-        <div>
-          <strong>MySQL</strong><br />
-          Pengelolaan dan manipulasi basis data relasional
-        </div>
-      </div>
-
-      <div class="skill-item">
-        <img src="assets/database.png" alt="Database" />
-        <div>
-          <strong>Perancangan Database</strong><br />
-          Membuat struktur dan relasi database yang optimal
+          <div class="soft-skill-list">
+            <div class="soft-skill-item">Attention to Detail</div>
+            <div class="soft-skill-item">Analytical & Problem-Solving</div>
+            <div class="soft-skill-item">Time Management</div>
+            <div class="soft-skill-item">Teamwork & Collaboration</div>
+            <div class="soft-skill-item">
+              Adaptability & Willingness to Learn
+            </div>
+            <div class="soft-skill-item">Organizational Discipline</div>
+            <div class="soft-skill-item">Creativity</div>
+            <div class="soft-skill-item">Copywriting</div>
+          </div>
         </div>
       </div>
     </div>
 
     <div style="background-color: #ffeedd; color: #ffeedd; padding: 30px">
       <h2 style="text-align: center; color: #358181; font-weight: bold">
-        PROYEK SAYA
+        MY PROJECT
       </h2>
-      <div style="padding-left: 10px; padding-right: 10px; margin-top: 20px">
+      <div style="margin-left: 10px; margin-right: 10px; margin-top: 20px; border: 1px solid #358181;">
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div
             class="accordion-item"
@@ -367,7 +213,7 @@
                   color: #ffeedd;
                 "
               >
-                Aplikasi Website Kasir
+                Mini Cashier
               </button>
             </h2>
             <div
@@ -380,9 +226,10 @@
                 class="accordion-body"
                 style="background-color: #ffeedd; color: #358181"
               >
-                Aplikasi mini kasir berbasis web untuk mengelola barang masuk
-                dan keluar, mencatat transaksi penjualan, serta menyajikan
-                laporan penjualan secara otomatis.
+                A mini cashier web application used to manage incoming and
+                outgoing items, record sales transactions, and automatically
+                generate sales reports. Built with Laravel framework and
+                database MySQL.
               </div>
               <div
                 style="
@@ -429,7 +276,7 @@
                   color: #ffeedd;
                 "
               >
-                Aplikasi Website Laundry
+                Laundry Cashier
               </button>
             </h2>
             <div
@@ -442,9 +289,9 @@
                 class="accordion-body"
                 style="background-color: #ffeedd; color: #358181"
               >
-                Aplikasi berbasis web yang digunakan untuk pengelolaan layanan
-                laundry, mulai dari pencatatan transaksi, status laundry, hingga
-                penyajian laporan pendapatan.
+                A web-based application for managing laundry services, including
+                transaction records, laundry status, and automated revenue
+                reports. Built with Laravel framework and database MySQL.
               </div>
               <div
                 style="
@@ -491,7 +338,7 @@
                   color: #ffeedd;
                 "
               >
-                Aplikasi Website Pengelolaan Inventori
+                Inventory Management
               </button>
             </h2>
             <div
@@ -504,9 +351,9 @@
                 class="accordion-body"
                 style="background-color: #ffeedd; color: #358181"
               >
-                Sistem pengelolaan inventori berbasis web yang berfungsi untuk
-                mencatat barang masuk dan keluar di lingkungan pergudangan atau
-                toko.
+                A web-based inventory system for recording incoming and outgoing
+                goods in warehouse or store environments. Built with Laravel
+                framework and database MySQL.
               </div>
               <div
                 style="
@@ -553,7 +400,7 @@
                   color: #ffeedd;
                 "
               >
-                Aplikasi Website Pengajuan Cuti
+                Leave Request
               </button>
             </h2>
             <div
@@ -566,9 +413,9 @@
                 class="accordion-body"
                 style="background-color: #ffeedd; color: #358181"
               >
-                Aplikasi web yang memudahkan pegawai dalam mengajukan cuti
-                secara online, serta membantu admin dalam menyetujui dan
-                mencatat riwayat cuti pegawai.
+                A web application that allows employees to submit leave requests
+                online, while helping administrators approve and manage leave
+                records. Built with Laravel framework and database MySQL.
               </div>
               <div
                 style="
@@ -631,7 +478,7 @@
                   color: #ffeedd;
                 "
               >
-                Aplikasi Website Absensi
+                Attendance
               </button>
             </h2>
             <div
@@ -644,14 +491,13 @@
                 class="accordion-body"
                 style="background-color: #ffeedd; color: #358181"
               >
-                Sistem absensi berbasis web yang diterapkan di SMPN 2
-                Cigalontang, digunakan untuk mencatat kehadiran siswa secara
-                digital dan menyajikan data absensi yang akurat.
+                A web-based attendance system implemented at SMPN 2 Cigalontang,
+                designed to digitally record student attendance and provide
+                accurate data. Built with Laravel framework and database MySQL.
                 <div
                   style="
                     padding-top: 10px;
                     padding-bottom: 10px;
-                    padding-left: 20px;
                     background-color: #ffeedd;
                   "
                 >
@@ -687,6 +533,118 @@
                     GitHub
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="accordion-item"
+            style="background-color: #358181; color: #ffeedd"
+          >
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix"
+                aria-expanded="false"
+                aria-controls="flush-collapseSix"
+                style="
+                  font-weight: bolder;
+                  background-color: #358181;
+                  color: #ffeedd;
+                "
+              >
+                Kelas Ngoding
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body"
+                style="background-color: #ffeedd; color: #358181"
+              >
+                A web-based learning platform developed to support programming
+                classes by providing structured modules, hands-on exercises, and
+                project-based learning. The system enables students to access
+                materials, track progress, and complete coding assignments
+                efficiently. Built using the Laravel framework with MySQL as the
+                database to ensure secure, scalable, and well-organized data
+                management.
+                <div
+                  style="
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    background-color: #ffeedd;
+                  "
+                >
+                  <a
+                    href="https://kelasngoding.com/"
+                    target="_blank"
+                    style="
+                      background-color: #007bff;
+                      color: white;
+                      padding: 6px 12px;
+                      border-radius: 4px;
+                      text-decoration: none;
+                      display: inline-block;
+                      font-size: 14px;
+                      margin-right: 10px;
+                    "
+                  >
+                    Website
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="accordion-item"
+            style="background-color: #358181; color: #ffeedd"
+          >
+            <h2 class="accordion-header" id="flush-headingSeven">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSeven"
+                aria-expanded="false"
+                aria-controls="flush-collapseSeven"
+                style="
+                  font-weight: bolder;
+                  background-color: #358181;
+                  color: #ffeedd;
+                "
+              >
+                iPartner UMTAS
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSeven"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingSeven"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body"
+                style="background-color: #ffeedd; color: #358181"
+              >
+                A partnership management system for Universitas Muhammadiyah
+                Tasikmalaya (UMTAS) to manage collaboration data and monitor
+                agreement statuses efficiently. Built with Laravel and MySQL for
+                secure and structured data handling.
+                <div
+                  style="
+                    padding-top: 10px;
+                    padding-left: 20px;
+                    background-color: #ffeedd;
+                  "
+                ></div>
               </div>
             </div>
           </div>
