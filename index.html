@@ -1,29 +1,630 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aisyah Siti Zahra</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="background-color: #ffeedd">
-    <div>
-      <div class="profile-container">
-        <div class="overlay">
-          <img src="assets/aisyah.jpg" alt="Foto Aisyah" />
-          <h1 style="font-weight: bold">Hi, I'm Aisyah Siti Zahra!</h1>
-          <h6 style="font-style: italic">
-            Junior Web Developer, Junior BackEnd Developer, Administrator.
-          </h6>
-          <div class="social-links">
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#home">Aisyah Siti Zahra</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- profile -->
+    <section id="home" class="profile-section">
+      <div class="container">
+        <div class="profile-wrapper">
+          <div class="profile-text">
+            <h1 class="typing"></h1>
+
+            <h6>Web Developer | Administration</h6>
+            <p>
+              Final year Informatics Management student with a strong interest
+              in web development and administrative systems. I combine
+              structured thinking, attention to detail, and technical skills to
+              build efficient, well-organized digital solutions that support
+              operational workflows.
+            </p>
+            <a href="#contact" class="contact">Contact Me</a>
+          </div>
+
+          <div class="profile-image">
+            <img src="assets/aisyah.jpg" alt="Aisyah Siti Zahra" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <h3 class="skills-title">Hard Skills</h3>
+
+            <div class="hard-skill-grid">
+              <div class="hard-skill-item">
+                <img src="assets/vsc.png" alt="VS Code" />
+              </div>
+
+              <div class="hard-skill-item">
+                <img src="assets/html-css.png" alt="HTML CSS" />
+              </div>
+
+              <div class="hard-skill-item">
+                <img src="assets/laravel.png" alt="Laravel" />
+              </div>
+
+              <div class="hard-skill-item">
+                <img src="assets/mysql.png" alt="MySQL" />
+              </div>
+
+              <div class="hard-skill-item">
+                <img src="assets/database.png" alt="Database" />
+              </div>
+
+              <div class="hard-skill-item">
+                <img src="assets/php.png" alt="PHP" />
+              </div>
+
+              <div class="hard-skill-item">
+                <img src="assets/github.png" alt="GitHub" />
+              </div>
+
+              <div class="hard-skill-item">
+                <img src="assets/golang.png" alt="Golang" />
+              </div>
+
+              <div class="hard-skill-item">
+                <img src="assets/react.png" alt="React" />
+              </div>
+
+              <div class="hard-skill-item">
+                <img src="assets/canva.png" alt="Canva" />
+              </div>
+
+              <div class="hard-skill-item">
+                <img src="assets/excel.png" alt="Microsoft Excel" />
+              </div>
+
+              <div class="hard-skill-item">
+                <img src="assets/word.png" alt="Microsoft Word" />
+              </div>
+
+              <div class="hard-skill-item">
+                <img src="assets/powerpoint.png" alt="Microsoft Power Point" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h3 class="skills-title">Soft Skills</h3>
+
+            <div class="soft-skill-list">
+              <div class="soft-skill-item">Attention to Detail</div>
+              <div class="soft-skill-item">Analytical & Problem-Solving</div>
+              <div class="soft-skill-item">Time Management</div>
+              <div class="soft-skill-item">Teamwork & Collaboration</div>
+              <div class="soft-skill-item">
+                Adaptability & Willingness to Learn
+              </div>
+              <div class="soft-skill-item">Organizational Discipline</div>
+              <div class="soft-skill-item">Creativity</div>
+              <div class="soft-skill-item">Copywriting</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">September - December 2025</span>
+              <h4>Junior Website Developer</h4>
+              <span class="timeline-company">PT Prilude Digital Indonesia</span>
+              <p>
+                Developed multiple websites using Laravel, primarily handling
+                frontend tasks including Blade templating, UI implementation,
+                layout structuring, and ensuring responsive and user-friendly
+                interfaces.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">September 2025</span>
+              <h4>Design – Social Media Content</h4>
+              <span class="timeline-company"
+                >PT Berkah Pikiran Rakyat (Kabar Priangan Tasikmalaya)</span
+              >
+              <p>
+                Collaborated in a short-term design project for Kabar Priangan,
+                producing Instagram visual content using Canva. Successfully
+                delivered published social media posts tailored to audience
+                engagement and brand consistency.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">July - August 2025</span>
+              <h4>Website Developer</h4>
+              <span class="timeline-company">KKN Politeknik LP3I</span>
+              <p>
+                Developed a web-based attendance information system for SMK
+                Negeri 2 Cigalontang to digitize and streamline student
+                attendance management. The system includes attendance recording,
+                data management, and reporting features. This project has been
+                officially registered for Intellectual Property Rights (HAKI).
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">May - June 2025</span>
+              <h4>Secretary</h4>
+              <span class="timeline-company"
+                >Campus Event Collaboration (LCC x HIMASI Tasikmalaya)</span
+              >
+              <p>
+                Served as Administrative Staff in a campus collaboration event,
+                responsible for drafting formal proposals, managing event
+                documentation, supporting event operations, and maintaining
+                effective communication between collaborating institutions to
+                ensure smooth coordination.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">June 2021 – July 2022</span>
+              <h4>Administration</h4>
+              <span class="timeline-company">Azzahra Mebeul</span>
+              <p>
+                One year of experience as an Administrative Staff, responsible
+                for managing archives and documents, recording and reconciling
+                financial transactions, monitoring inventory stock, and
+                providing responsive and professional customer service via chat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- organization & edu -->
+    <section id="organization" class="organization-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="sub-title">Organization</h4>
+
+            <div class="organization-list">
+              <div class="org-card">
+                <img src="assets/jurnalistik.png" alt="Majalah Kreatif" />
+                <div class="org-content">
+                  <h5>Majalah Kreatif (Jurnalistik Sekolah)</h5>
+                  <p>
+                    Started as a crew member and later served as Secretary and
+                    Vice Chairperson. Responsible for coordinating task
+                    distribution, managing documentation, and organizing
+                    editorial workflows. Actively involved in school event
+                    coverage and publishing a quarterly school magazine every
+                    three months.
+                  </p>
+                </div>
+              </div>
+
+              <div class="org-card">
+                <img src="assets/lcc.png" alt="LP3I Computer Club" />
+                <div class="org-content">
+                  <h5>LP3I Computer Club</h5>
+                  <p>
+                    Served as Secretary of UKM LP3I Computer Club, managing
+                    administrative workflows including documentation, reporting,
+                    proposal preparation, and archiving. Also contributed to
+                    teaching activities by delivering learning sessions for
+                    members.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <h4 class="sub-title">Education</h4>
+            <div class="logo-grid">
+              <div class="logo-item" onclick="toggleLogo(this)">
+                <img src="assets/smk.png" alt="SMK Negeri 1 Banjar" />
+                <p class="logo-name">SMK Negeri 1 Banjar</p>
+              </div>
+
+              <div class="logo-item" onclick="toggleLogo(this)">
+                <img src="assets/lp3i.png" alt="Politeknik LP3I" />
+                <p class="logo-name">Politeknik LP3I</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT  -->
+    <section id="projects" class="project-section">
+      <div class="container">
+        <h2 class="section-title">My Project</h2>
+        <div class="row g-4">
+          <div class="col-12">
+            <h3 class="project-title">Coding Projects</h3>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="project-card">
+              <img src="assets/gopay.png" alt="Gopay Flutter" />
+              <h5>Gopay Flutter</h5>
+              <div class="project-overlay">
+                <h5>Gopay Flutter</h5>
+                <p>
+                  Built an Android GoPay-inspired application using Flutter for
+                  a course project.
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://github.com/aszahra/gopay_android"
+                    target="_blank"
+                    class="btn-github"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://www.figma.com/design/XkKfNcINAzT6tqEW69N9bV/Gopay-Flutter?node-id=0-1&t=XtJ7mWLkYdP2rtur-1"
+                    target="_blank"
+                    class="btn-visit"
+                    >Figma</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="project-card">
+              <img src="assets/siabsen.png" alt="Website SIABSENSI" />
+              <h5>SIABSENSI</h5>
+              <div class="project-overlay">
+                <h5>Website SIABSENSI</h5>
+                <p>A web-based attendance system for SMPN 2 Cigalontang</p>
+                <div class="project-buttons">
+                  <a
+                    href="https://github.com/aszahra/siabsen"
+                    target="_blank"
+                    class="btn-github"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="project-card">
+              <img src="assets/kelasngoding.png" alt="Website Kelas Ngoding" />
+              <h5>Kelas Ngoding</h5>
+              <div class="project-overlay">
+                <h5>Kelas Ngoding</h5>
+                <p>Learning platform for online classes</p>
+
+                <div class="project-buttons">
+                  <a
+                    href="https://kelasngoding.com/"
+                    target="_blank"
+                    class="btn-visit"
+                    >Website</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="project-card">
+              <img src="assets/ipartner.png" alt="Website iPartner UMTAS" />
+              <h5>iPartner UMTAS</h5>
+              <div class="project-overlay">
+                <h5>iPartner UMTAS</h5>
+                <p>
+                  A partnership management system for Universitas Muhammadiyah
+                  Tasikmalaya
+                </p>
+
+                <div class="project-buttons">
+                  <a
+                    href="https://ipartner.umtas.ac.id/"
+                    target="_blank"
+                    class="btn-visit"
+                    >Website</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="project-card">
+              <img src="assets/perpus.png" alt="Website Perp-us" />
+              <h5>Website Perp-Us</h5>
+              <div class="project-overlay">
+                <h5>Website Perp-Us</h5>
+                <p>
+                  Library system for managing book collections, borrowings, and
+                  returns efficiently
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://github.com/aszahra/perp-us"
+                    target="_blank"
+                    class="btn-github"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mt-5">
+            <h3 class="project-title">Design Projects</h3>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="project-card">
+              <img src="assets/gdesign.png" alt="Academic Project" />
+              <h5>Academic Project</h5>
+              <div class="project-overlay">
+                <h5>Academic Project</h5>
+                <p>
+                  Designed promotional social media posts for a real wedding
+                  organizer as part of a course project.
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://www.instagram.com/project3_gdesign/"
+                    target="_blank"
+                    class="btn-visit"
+                    >View</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="project-card">
+              <img src="assets/figma.png" alt="Gopay Design" />
+              <h5>Gopay Design</h5>
+              <div class="project-overlay">
+                <h5>Gopay Design</h5>
+                <p>
+                  Designed the Android mobile UI in Figma, including wireframes
+                  and interactive prototypes
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://www.figma.com/design/XkKfNcINAzT6tqEW69N9bV/Gopay-Flutter?node-id=0-1&t=XtJ7mWLkYdP2rtur-1"
+                    target="_blank"
+                    class="btn-visit"
+                    >View</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="project-card">
+              <img src="assets/kapri.png" alt="Internship Kabar Priangan" />
+              <h5>Internship Kabar Priangan</h5>
+              <div class="project-overlay">
+                <h5>Internship Kabar Priangan</h5>
+                <p>
+                  Designed social media content using Canva and collaborated on
+                  Instagram posts
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://www.instagram.com/p/DObPcC9kqjY/?img_index=1"
+                    target="_blank"
+                    class="btn-visit"
+                    >View</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="project-card">
+              <img src="assets/kapri2.jpeg" alt="Internship Kabar Priangan" />
+              <h5>Internship Kabar Priangan</h5>
+              <div class="project-overlay">
+                <h5>Internship Kabar Priangan</h5>
+                <p>
+                  Designed social media content using Canva and collaborated on
+                  Instagram posts
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://www.instagram.com/p/DOanPBXEhoR/?img_index=1"
+                    target="_blank"
+                    class="btn-visit"
+                    >View</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catchme" id="contact">
+      <div class="social-links">
+        <div>
+          <h3 class="skills-title">Get in Touch</h3>
+        </div>
+        <div class="social-icons">
+          <a href="https://wa.me/6289510328739" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-whatsapp"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 8 0a7.93 7.93 0 0 0-6.927 11.588L0 16l4.522-1.186A7.93 7.93 0 0 0 8 16a7.93 7.93 0 0 0 5.601-13.674zm-5.6 12.196a6.68 6.68 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.68 6.68 0 1 1 12.175-3.979 6.68 6.68 0 0 1-6.595 6.673zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+              />
+            </svg>
+          </a>
+
+          <a href="https://github.com/aszahra" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.59 7.59 0 0 1 8 4.58c.68.003 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+
+          <a href="https://www.instagram.com/syah_asz/" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.8 0 5.5.01 4.7.05c-.8.04-1.3.17-1.7.36a3.4 3.4 0 0 0-1.2.78A3.4 3.4 0 0 0 .42 2.76c-.19.4-.32.9-.36 1.7C.01 5.5 0 5.8 0 8s.01 2.5.05 3.3c.04.8.17 1.3.36 1.7a3.4 3.4 0 0 0 .78 1.2 3.4 3.4 0 0 0 1.2.78c.4.19.9.32 1.7.36.8.04 1.1.05 3.3.05s2.5-.01 3.3-.05c.8-.04 1.3-.17 1.7-.36a3.4 3.4 0 0 0 1.2-.78 3.4 3.4 0 0 0 .78-1.2c.19-.4.32-.9.36-1.7.04-.8.05-1.1.05-3.3s-.01-2.5-.05-3.3c-.04-.8-.17-1.3-.36-1.7a3.4 3.4 0 0 0-.78-1.2 3.4 3.4 0 0 0-1.2-.78c-.4-.19-.9-.32-1.7-.36C10.5.01 10.2 0 8 0zm0 1.44c2.1 0 2.4.01 3.3.05.7.03 1.1.15 1.4.26.3.12.5.26.7.47.2.2.35.4.47.7.11.3.23.7.26 1.4.04.9.05 1.2.05 3.3s-.01 2.4-.05 3.3c-.03.7-.15 1.1-.26 1.4a2 2 0 0 1-.47.7 2 2 0 0 1-.7.47c-.3.11-.7.23-1.4.26-.9.04-1.2.05-3.3.05s-2.4-.01-3.3-.05c-.7-.03-1.1-.15-1.4-.26a2 2 0 0 1-.7-.47 2 2 0 0 1-.47-.7c-.11-.3-.23-.7-.26-1.4C1.45 10.4 1.44 10.1 1.44 8s.01-2.4.05-3.3c.03-.7.15-1.1.26-1.4a2 2 0 0 1 .47-.7 2 2 0 0 1 .7-.47c.3-.11.7-.23 1.4-.26.9-.04 1.2-.05 3.3-.05zM8 3.89a4.11 4.11 0 1 0 0 8.22 4.11 4.11 0 0 0 0-8.22zm0 6.78a2.67 2.67 0 1 1 0-5.34 2.67 2.67 0 0 1 0 5.34zm4.15-6.88a.96.96 0 1 1-1.92 0 .96.96 0 0 1 1.92 0z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/aisyah-siti-zahra/"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-linkedin"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.146C0 .513.525 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.525 16 0 15.487 0 14.854V1.146zM4.943 12.306V6.169H2.542v6.137h2.401zm-1.2-7.08c.837 0 1.358-.554 1.358-1.248-.015-.71-.52-1.248-1.342-1.248-.822 0-1.357.538-1.357 1.248 0 .694.52 1.248 1.327 1.248h.014zm4.908 7.08V9.359c0-.215.016-.43.08-.586.173-.43.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v2.777h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.026h-.016a5.2 5.2 0 0 1 .016-.026V6.169H6.542c.03.678 0 6.137 0 6.137h2.401z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-md-6 footer-left">
+            <h5 class="footer-name">Aisyah Siti Zahra</h5>
+            <p>
+              Final year Informatics Management student with a strong interest
+              in web development and administrative systems. I combine
+              structured thinking, attention to detail, and technical skills to
+              build efficient, well-organized digital solutions that support
+              operational workflows.
+            </p>
+          </div>
+
+          <div class="col-md-6 footer-right text-md-end">
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="text-center small-text">
+          <div class="social-icons" style="text-align: center; justify-content: center; padding-bottom: 10px;">
             <a href="https://wa.me/6289510328739" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -87,581 +688,11 @@
               </svg>
             </a>
           </div>
+          © 2026 Aisyah Siti Zahra. All rights reserved.
         </div>
       </div>
-    </div>
-    <div class="about-section" style="background-color: #ffeedd">
-      <h2>ABOUT ME</h2>
-      <p>
-        I am an Informatics Management student with a strong passion for
-        technology and problem-solving. With experience in administrative work
-        and hands-on involvement in web development projects, I combine
-        accuracy, structured thinking, and solid technical skills to create
-        efficient and well-organized digital solutions. I am adaptable,
-        detail-oriented, and committed to delivering quality work while
-        continuously expanding my expertise in system design, databases, and
-        business process digitalization.
-      </p>
-    </div>
+    </footer>
 
-    <div
-      class="skills-section"
-      style="background-color: #358181; padding: 20px"
-    >
-      <div
-        style="
-          display: flex;
-          gap: 40px;
-          justify-content: center;
-          flex-wrap: wrap;
-        "
-      >
-        <div style="flex: 1; min-width: 300px">
-          <h3 style="color: #ffeedd; font-weight: bold; margin-bottom: 15px">
-            Hard Skills
-          </h3>
-
-          <div class="skill-item">
-            <img src="assets/html-css.png" alt="HTML CSS" />
-            <div>
-              <strong>HTML & CSS</strong><br />
-              Basic frontend development for web interfaces
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <img src="assets/laravel.png" alt="Laravel" />
-            <div>
-              <strong>Laravel</strong><br />
-              Modern PHP framework for building efficient web applications
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <img src="assets/mysql.png" alt="MySQL" />
-            <div>
-              <strong>MySQL</strong><br />
-              Management and manipulation of relational databases
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <img src="assets/database.png" alt="Database" />
-            <div>
-              <strong>Database Design</strong><br />
-              Creating optimal database structures and relationships
-            </div>
-          </div>
-
-          <div class="skill-item justify-content-start">
-            <strong class="me-3">and others</strong>
-            <div class="d-flex flex-wrap gap-2">
-              <img src="assets/php.png" alt="PHP" />
-              <img src="assets/canva.png" alt="Canva" />
-              <img src="assets/word.png" alt="Microsoft Word" />
-              <img src="assets/excel.png" alt="Microsoft Excel" />
-              <img src="assets/powerpoint.png" alt="Microsoft Powerpoint" />
-              <img src="assets/vsc.png" alt="Visual Studio Code" />
-              <img src="assets/github.png" alt="GitHub" />
-            </div>
-          </div>
-        </div>
-
-        <!-- SOFT SKILLS -->
-        <div style="flex: 1; min-width: 300px">
-          <h3 style="color: #ffeedd; font-weight: bold; margin-bottom: 15px">
-            Soft Skills
-          </h3>
-
-          <div class="soft-skill-list">
-            <div class="soft-skill-item">Attention to Detail</div>
-            <div class="soft-skill-item">Analytical & Problem-Solving</div>
-            <div class="soft-skill-item">Time Management</div>
-            <div class="soft-skill-item">Teamwork & Collaboration</div>
-            <div class="soft-skill-item">
-              Adaptability & Willingness to Learn
-            </div>
-            <div class="soft-skill-item">Organizational Discipline</div>
-            <div class="soft-skill-item">Creativity</div>
-            <div class="soft-skill-item">Copywriting</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div style="background-color: #ffeedd; color: #ffeedd; padding: 30px">
-      <h2 style="text-align: center; color: #358181; font-weight: bold">
-        MY PROJECT
-      </h2>
-      <div style="margin-left: 10px; margin-right: 10px; margin-top: 20px; border: 1px solid #358181;">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div
-            class="accordion-item"
-            style="background-color: #358181; color: #ffeedd"
-          >
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
-                aria-expanded="false"
-                aria-controls="flush-collapseOne"
-                style="
-                  font-weight: bolder;
-                  background-color: #358181;
-                  color: #ffeedd;
-                "
-              >
-                Mini Cashier
-              </button>
-            </h2>
-            <div
-              id="flush-collapseOne"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingOne"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div
-                class="accordion-body"
-                style="background-color: #ffeedd; color: #358181"
-              >
-                A mini cashier web application used to manage incoming and
-                outgoing items, record sales transactions, and automatically
-                generate sales reports. Built with Laravel framework and
-                database MySQL.
-              </div>
-              <div
-                style="
-                  padding-top: 10px;
-                  padding-bottom: 10px;
-                  padding-left: 20px;
-                  background-color: #ffeedd;
-                "
-              >
-                <a
-                  href="https://github.com/aszahra/kasir"
-                  target="_blank"
-                  style="
-                    background-color: #000000;
-                    color: white;
-                    padding: 6px 12px;
-                    border-radius: 4px;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 14px;
-                  "
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="accordion-item"
-            style="background-color: #358181; color: #ffeedd"
-          >
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
-                aria-expanded="false"
-                aria-controls="flush-collapseTwo"
-                style="
-                  font-weight: bolder;
-                  background-color: #358181;
-                  color: #ffeedd;
-                "
-              >
-                Laundry Cashier
-              </button>
-            </h2>
-            <div
-              id="flush-collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingTwo"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div
-                class="accordion-body"
-                style="background-color: #ffeedd; color: #358181"
-              >
-                A web-based application for managing laundry services, including
-                transaction records, laundry status, and automated revenue
-                reports. Built with Laravel framework and database MySQL.
-              </div>
-              <div
-                style="
-                  padding-top: 10px;
-                  padding-bottom: 10px;
-                  padding-left: 20px;
-                  background-color: #ffeedd;
-                "
-              >
-                <a
-                  href="https://github.com/aszahra/kasir-laundry"
-                  target="_blank"
-                  style="
-                    background-color: #000000;
-                    color: white;
-                    padding: 6px 12px;
-                    border-radius: 4px;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 14px;
-                  "
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="accordion-item"
-            style="background-color: #358181; color: #ffeedd"
-          >
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
-                aria-expanded="false"
-                aria-controls="flush-collapseThree"
-                style="
-                  font-weight: bolder;
-                  background-color: #358181;
-                  color: #ffeedd;
-                "
-              >
-                Inventory Management
-              </button>
-            </h2>
-            <div
-              id="flush-collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingThree"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div
-                class="accordion-body"
-                style="background-color: #ffeedd; color: #358181"
-              >
-                A web-based inventory system for recording incoming and outgoing
-                goods in warehouse or store environments. Built with Laravel
-                framework and database MySQL.
-              </div>
-              <div
-                style="
-                  padding-top: 10px;
-                  padding-bottom: 10px;
-                  padding-left: 20px;
-                  background-color: #ffeedd;
-                "
-              >
-                <a
-                  href="https://github.com/aszahra/pengelolaan-stok"
-                  target="_blank"
-                  style="
-                    background-color: #000000;
-                    color: white;
-                    padding: 6px 12px;
-                    border-radius: 4px;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 14px;
-                  "
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="accordion-item"
-            style="background-color: #358181; color: #ffeedd"
-          >
-            <h2 class="accordion-header" id="flush-headingFour">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFour"
-                aria-expanded="false"
-                aria-controls="flush-collapseFour"
-                style="
-                  font-weight: bolder;
-                  background-color: #358181;
-                  color: #ffeedd;
-                "
-              >
-                Leave Request
-              </button>
-            </h2>
-            <div
-              id="flush-collapseFour"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingFour"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div
-                class="accordion-body"
-                style="background-color: #ffeedd; color: #358181"
-              >
-                A web application that allows employees to submit leave requests
-                online, while helping administrators approve and manage leave
-                records. Built with Laravel framework and database MySQL.
-              </div>
-              <div
-                style="
-                  padding-top: 10px;
-                  padding-bottom: 10px;
-                  padding-left: 20px;
-                  background-color: #ffeedd;
-                "
-              >
-                <a
-                  href="https://mi23a-pengajuancuti.politekniklp3i-tasikmalaya.ac.id/"
-                  target="_blank"
-                  style="
-                    background-color: #007bff;
-                    color: white;
-                    padding: 6px 12px;
-                    border-radius: 4px;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 14px;
-                    margin-right: 10px;
-                  "
-                >
-                  Website
-                </a>
-                <a
-                  href="https://github.com/aszahra/pengajuan-cuti"
-                  target="_blank"
-                  style="
-                    background-color: #000000;
-                    color: white;
-                    padding: 6px 12px;
-                    border-radius: 4px;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 14px;
-                  "
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="accordion-item"
-            style="background-color: #358181; color: #ffeedd"
-          >
-            <h2 class="accordion-header" id="flush-headingFive">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFive"
-                aria-expanded="false"
-                aria-controls="flush-collapseFive"
-                style="
-                  font-weight: bolder;
-                  background-color: #358181;
-                  color: #ffeedd;
-                "
-              >
-                Attendance
-              </button>
-            </h2>
-            <div
-              id="flush-collapseFive"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingFive"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div
-                class="accordion-body"
-                style="background-color: #ffeedd; color: #358181"
-              >
-                A web-based attendance system implemented at SMPN 2 Cigalontang,
-                designed to digitally record student attendance and provide
-                accurate data. Built with Laravel framework and database MySQL.
-                <div
-                  style="
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    background-color: #ffeedd;
-                  "
-                >
-                  <a
-                    href="http://siabsen-smpn2cigalontang.my.id/"
-                    target="_blank"
-                    style="
-                      background-color: #007bff;
-                      color: white;
-                      padding: 6px 12px;
-                      border-radius: 4px;
-                      text-decoration: none;
-                      display: inline-block;
-                      font-size: 14px;
-                      margin-right: 10px;
-                    "
-                  >
-                    Website
-                  </a>
-                  <a
-                    href="https://github.com/aszahra/siabsen"
-                    target="_blank"
-                    style="
-                      background-color: #000000;
-                      color: white;
-                      padding: 6px 12px;
-                      border-radius: 4px;
-                      text-decoration: none;
-                      display: inline-block;
-                      font-size: 14px;
-                    "
-                  >
-                    GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="accordion-item"
-            style="background-color: #358181; color: #ffeedd"
-          >
-            <h2 class="accordion-header" id="flush-headingSix">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseSix"
-                aria-expanded="false"
-                aria-controls="flush-collapseSix"
-                style="
-                  font-weight: bolder;
-                  background-color: #358181;
-                  color: #ffeedd;
-                "
-              >
-                Kelas Ngoding
-              </button>
-            </h2>
-            <div
-              id="flush-collapseSix"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingSix"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div
-                class="accordion-body"
-                style="background-color: #ffeedd; color: #358181"
-              >
-                A web-based learning platform developed to support programming
-                classes by providing structured modules, hands-on exercises, and
-                project-based learning. The system enables students to access
-                materials, track progress, and complete coding assignments
-                efficiently. Built using the Laravel framework with MySQL as the
-                database to ensure secure, scalable, and well-organized data
-                management.
-                <div
-                  style="
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    background-color: #ffeedd;
-                  "
-                >
-                  <a
-                    href="https://kelasngoding.com/"
-                    target="_blank"
-                    style="
-                      background-color: #007bff;
-                      color: white;
-                      padding: 6px 12px;
-                      border-radius: 4px;
-                      text-decoration: none;
-                      display: inline-block;
-                      font-size: 14px;
-                      margin-right: 10px;
-                    "
-                  >
-                    Website
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="accordion-item"
-            style="background-color: #358181; color: #ffeedd"
-          >
-            <h2 class="accordion-header" id="flush-headingSeven">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseSeven"
-                aria-expanded="false"
-                aria-controls="flush-collapseSeven"
-                style="
-                  font-weight: bolder;
-                  background-color: #358181;
-                  color: #ffeedd;
-                "
-              >
-                iPartner UMTAS
-              </button>
-            </h2>
-            <div
-              id="flush-collapseSeven"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingSeven"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div
-                class="accordion-body"
-                style="background-color: #ffeedd; color: #358181"
-              >
-                A partnership management system for Universitas Muhammadiyah
-                Tasikmalaya (UMTAS) to manage collaboration data and monitor
-                agreement statuses efficiently. Built with Laravel and MySQL for
-                secure and structured data handling.
-                <div
-                  style="
-                    padding-top: 10px;
-                    padding-left: 20px;
-                    background-color: #ffeedd;
-                  "
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      style="
-        text-align: center;
-        font-style: italic;
-        color: #358181;
-        font-size: 12px;
-      "
-    >
-      <p>2025</p>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
