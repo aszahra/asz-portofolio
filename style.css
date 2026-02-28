@@ -89,7 +89,7 @@ html {
   padding: 20px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   transition: 0.3s ease;
 }
 
@@ -188,7 +188,7 @@ html {
 /* skills */
 .hard-skill-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
@@ -235,7 +235,7 @@ html {
 
 @media (max-width: 768px) {
   .hard-skill-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -322,6 +322,7 @@ html {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .logo-item {
@@ -338,9 +339,17 @@ html {
   transition: 0.4s ease;
 }
 
-.logo-name {
-  margin-top: 10px;
+.edu-name {
+  font-weight: 600;
   font-size: 14px;
+  margin: 10px 0 0 0 ;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.edu-major {
+  font-size: 13px;
+  margin: 2px 0 0 0;
   opacity: 0;
   transition: 0.3s ease;
 }
@@ -350,7 +359,8 @@ html {
   transform: scale(1.05);
 }
 
-.logo-item.active .logo-name {
+.logo-item.active .edu-name,
+.logo-item.active .edu-major {
   opacity: 1;
 }
 
